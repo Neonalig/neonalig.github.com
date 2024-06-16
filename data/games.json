@@ -1,0 +1,362 @@
+[
+    {
+        "id": "circuitree",
+        "name": "CircuiTree",
+        "genres": ["Puzzle", "Rhythm"],
+        "platforms": ["PC"],
+        "publish-date": "2020-04-20T00:00:00.000Z",
+        "game-jam": "Ludum Dare 46",
+        "url": "https://neonalig.itch.io/circuitree",
+        "blurb": "The rhythm-based circuitry building game.",
+        "description": "CircuiTree is a rhythm-based circuitry building game where your goal is to keep the mother tree alive by building and repairing circuits before they cause irreparable damage.",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvNjE2Nzk3LzMyNzk4NDEucG5n/original/Wq5%2Fss.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvNjE2Nzk3LzMyNzk4NDIucG5n/original/B6MMBz.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvNjE2Nzk3LzMyNzk4NDMucG5n/original/HG6hJC.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvNjE2Nzk3LzMyNzk4NDQucG5n/original/notab2.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvNjE2Nzk3LzMyNzk4NjcucG5n/original/HwZcdb.png"
+            }
+        ],
+        "banner": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzMyODU0NzUucG5n/original/kWunqD.png"
+        },
+        "thumbnail": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzMyNzk1ODUucG5n/315x250%23c/%2FI5It3.png"
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzMyNzk1ODUucG5n/32x32%23/VvmKox.png"
+        }
+    },
+    {
+        "id": "dont-freeze",
+        "name": "Don't Freeze",
+        "genres": [
+            "Survival",
+            "Puzzle"
+        ],
+        "platforms": [
+            "PC"
+        ],
+        "publish-date": "2020-10-05T00:00:00.000Z",
+        "game-jam": "Ludum Dare 47",
+        "url": "https://neonalig.itch.io/dont-freeze",
+        "blurb": "The spiritual predecessor to that one game about not being hungry.",
+        "description": "The spiritual... predecessor... to that one game about going hungry.\nCan you escape the forest before you go mad?\n\n> Hey, I think this place looks familiar...",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvNzc5MjI5LzQzNTg2MzIucG5n/original/pRZjW7.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvNzc5MjI5LzQzNTg2MzMucG5n/original/daeE4r.png"
+            }
+        ],
+        "banner": null,
+        "thumbnail": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzQzNTg2MzEucG5n/315x250%23c/%2BKhRNh.png"
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzQzNTkwMzUucG5n/32x32%23/IfwMhQ.png"
+        }
+    },
+    {
+        "id": "tenchi-shinden",
+        "name": "天地神殿・Tenchi Shinden",
+        "genres": [
+            "Puzzle",
+            "Adventure",
+            "Platformer"
+        ],
+        "platforms": [
+            "PC"
+        ],
+        "publish-date": "2021-04-26T00:00:00.000Z",
+        "game-jam": "SAMJam21",
+        "url": "https://neonalig.itch.io/tenchi-shinden",
+        "blurb": "Traverse the upper and lower dimensions in this fast-paced puzzle platformer game",
+        "description": "As a ninja-in-training, you always respected your sensei; However, one fateful day, she taught you the power of 天地 (Tenchi).\n\nWith this power in-hand, and a thirst for adventure, you set out for your closest training temple, 天地神殿 (Tenchi Shinden), to truly harness your new power.\n\nWhat events will unfold as you explore the depths and ruins of this pre-ancient temple, trying to reclaim the lost 交換結晶 (Koukan Crystal)? Only time will tell.",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvODg2Mzk1LzQ5OTczMzMucG5n/original/gD68PW.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvODg2Mzk1LzQ5OTczMzQucG5n/original/8FhIyW.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvODg2Mzk1LzQ5OTczMzUucG5n/original/yZHUiq.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvODg2Mzk1LzQ5OTczMzIucG5n/original/G6hoNU.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvODg2Mzk1LzQ5OTczMzYucG5n/original/yZBnyG.png"
+            }
+        ],
+        "banner": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzQ5OTczNDkucG5n/original/UiEWBL.png"
+        },
+        "thumbnail": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzQ5OTczMDAucG5n/315x250%23c/QzRuHK.png"
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzQ5OTc0MjEucG5n/32x32%23/uj1dRh.png"
+        }
+    },
+    {
+        "id": "phazer-punk",
+        "name": "Phazer Punk",
+        "genres": [
+            "Platformer",
+            "Adventure"
+        ],
+        "platforms": [
+            "PC"
+        ],
+        "publish-date": "2021-01-17T00:00:00.000Z",
+        "game-jam": "Ludum Dare 48",
+        "url": "https://studiokraze.itch.io/phazer-punk",
+        "blurb": "A mini metroidvania. This is a strand game. Are you ready to go deeper and deeper... Phazer Punk?",
+        "description": "A mini metroidvania. This is a strand game. Are you ready to go deeper and deeper... Phazer Punk?",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTAxNDg2NS81Nzk2MTM3LnBuZw==/original/MViEcq.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTAxNDg2NS81Nzk2MTM4LnBuZw==/original/Ktm8wg.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTAxNDg2NS81Nzk2MTM5LnBuZw==/original/syfs5M.png"
+            }
+        ],
+        "banner": null,
+        "thumbnail": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1hZ2UvMTAxNDg2NS81Nzk2MTQ1LnBuZw==/original/gkXZst.png"
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzU3ODA4MjAucG5n/32x32%23/nooRDg.png"
+        }
+    },
+    {
+        "id": "tales-of-sector-1",
+        "name": "Tales of Sector 1",
+        "genres": [
+            "Exploration",
+            "Meaningful Choices",
+            "Story Rich"
+        ],
+        "platforms": [
+            "PC"
+        ],
+        "publish-date": "2022-06-28T00:00:00.000Z",
+        "game-jam": "Jame Gam #19",
+        "url": "https://neonalig.itch.io/tales-of-sector-1",
+        "blurb": "A narrative-driven game about exploring the lower sectors of virus-infected space station.",
+        "description": "Listen up recruit!\n\nWe've recently caught wind of a nasty spreading virus infecting the lower sectors. It's your job to sort out that town so we don't lose our most valuable asset.\n\nDon't forget your moral training though. We don't want a repeat of the Pirate Cove incident. These denizens are easily swayed by the likes of new faces.",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTU5NDE1MC85MzIxNTgwLnBuZw==/original/7UiR8Z.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTU5NDE1MC85MzIxNTg2LnBuZw==/original/zG%2Fyd7.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTU5NDE1MC85MzIxNTgxLnBuZw==/original/acmuFa.png"
+            }
+        ],
+        "banner": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzkzMjE2ODMucG5n/original/esHnS%2F.png"
+        },
+        "thumbnail": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzkzMjE1NTgucG5n/315x250%23c/%2BtI%2Bo6.png"
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzkzMjE1NTgucG5n/32x32%23/Upzh92.png"
+        }
+    },
+    {
+        "id": "turnkee",
+        "name": "Turnkee",
+        "genres": [
+            "Survival",
+            "Dungeon Crawler",
+            "Turn-based",
+            "Roguelite"
+        ],
+        "platforms": [
+            "PC"
+        ],
+        "publish-date": "2022-10-03T00:00:00.000Z",
+        "game-jam": "Ludum Dare 51",
+        "url": "https://studiokraze.itch.io/turnkee",
+        "blurb": "A pixel art turn-based dungeon crawler where you choose to move one tile every turn.",
+        "description": "**TurnKee** is a pixel art turn-based dungeon crawler where you choose to move one tile every turn.\n\nYou are **Monkee**. You're in some dungeon. There's keys in the rooms. They might be useful. There's enemies. Probably should avoid them...",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTczMDI5OS8xMDE5MDE0Mi5wbmc=/original/sePJSi.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTczMDI5OS8xMDE5MDE1NC5wbmc=/original/U4HcIw.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTczMDI5OS8xMDE5MDE1My5wbmc=/original/On8UCi.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTczMDI5OS8xMDE5MDE1NS5wbmc=/original/HvpLt5.png"
+            }
+        ],
+        "banner": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "thumbnail": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzEwMTg4OTA1LnBuZw==/315x250%23c/MLUHc%2F.png"
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzEwMTg4OTA1LnBuZw==/32x32%23/ba1bFF.png"
+        }
+    },
+    {
+        "id": "routine-checkup",
+        "name": "Routine Checkup",
+        "genres": [
+            "First-Person",
+            "Horror",
+            "Murder Mystery"
+        ],
+        "platforms": [
+            "PC"
+        ],
+        "publish-date": "2023-02-07T00:00:00.000Z",
+        "game-jam": "Global Game Jam 2023",
+        "url": "https://deanwilsondev.itch.io/routine-checkup",
+        "blurb": "A first-person murder mystery horror game.",
+        "description": "Routine Checkup is a first-person murder mystery horror game. Explore a creepy dentist's office and try to identify a corpse by collecting the victim's missing teeth.",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTkwOTYwNC8xMTIyNDc1OS5wbmc=/original/O7QrJE.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTkwOTYwNC8xMTIyNDc2MC5wbmc=/original/n9yqhw.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMTkwOTYwNC8xMTIyNDc2MS5wbmc=/original/xpHv9E.png"
+            }
+        ],
+        "banner": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzExMjY1MDM4LnBuZw==/original/f29NdL.png"
+        },
+        "thumbnail": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzExMjY1MDU1LnBuZw==/315x250%23c/XowMlQ.png"
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzExMjY1MDU1LnBuZw==/32x32%23/sFShA4.png"
+        }
+    },
+    {
+        "id": "wizard-workout",
+        "name": "Wizard Workout",
+        "genres": [
+            "Simulation",
+            "Comedy"
+        ],
+        "platforms": [
+            "PC"
+        ],
+        "publish-date": "2024-01-28T00:00:00.000Z",
+        "game-jam": "Global Game Jam 2024",
+        "url": "https://neonalig.itch.io/wizard-workout",
+        "blurb": "Prepare baby wizards for the World Wizards Expo.",
+        "description": "Play as a mystical gym mogul preparing a bunch of baby wizards for the WWE (World Wizards Expo). Train them up in one of many skills to compete against the best at the end of your term, but don't let their idiocy make them fall prey to your equipment!",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMjUwODU4OC8xNDkwODQ1Mi5wbmc=/original/5EGIwZ.png"
+            },
+            {
+                "type": "video",
+                "url": "https://www.youtube.com/watch?v=eJNO7VwvzL8"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMjUwODU4OC8xNDkwODQ1NS5wbmc=/original/ReHzhD.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMjUwODU4OC8xNDkwODQ1NC5wbmc=/original/uZwFGa.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMjUwODU4OC8xNDkwODQ1MC5wbmc=/original/8YM4QI.png"
+            },
+            {
+                "type": "image",
+                "url": "https://img.itch.zone/aW1hZ2UvMjUwODU4OC8xNDkwODQ1My5wbmc=/original/qvLFvm.png"
+            }
+        ],
+        "banner": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzE0OTA4NDk3LnBuZw==/original/eN9dKT.png"
+        },
+        "thumbnail": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzE0OTA4NDQ5LnBuZw==/315x250%23c/ROSS%2BD.png"
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://img.itch.zone/aW1nLzE0OTA4NzU5LnBuZw==/32x32%23/jwUQP0.png"
+        }
+    }
+]

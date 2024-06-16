@@ -1,0 +1,33 @@
+<header class="bg-blue-600 py-6 text-white dark:bg-blue-800">
+    <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center">
+            <a href="/" class="text-4xl font-bold">Neonalig</a>
+            <nav class="space-x-4">
+                <a href="/src/about.html" class="text-white">About</a>
+                <a href="/src/asset.html?type=unity-asset" class="text-white">Unity Assets</a>
+                <a href="/src/asset.html?type=game" class="text-white">Games</a>
+                <a href="/src/asset.html?type=software" class="text-white">Software</a>
+                <a href="mailto:codychook@gmail.com" class="text-white">Contact</a>
+            </nav>
+        </div>
+        <div class="mt-2 flex justify-between items-center">
+            <p class="text-lg"></p>
+            <div class="flex items-center space-x-2">
+                <div class="relative inline-block w-12 align-middle select-none transition duration-200 ease-in">
+                    <input type="checkbox" name="toggle" id="toggle"
+                        class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                        onclick="toggleDarkMode()">
+                    <label for="toggle"
+                        class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer flex items-center space-x-3">
+                        <span class="text-xs text-gray-500">
+                            &nbsp;🌞
+                        </span>
+                        <span class="text-xs text-gray-500">
+                            🌜
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

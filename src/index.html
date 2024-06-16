@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Neonalig</title>
+        <link rel="icon" type="image/png" href="/resources/icon.png">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="/dist/styles.css" rel="stylesheet">
+        <script type="module" src="./main.js"></script>
+        <script type="module">
+            import { main } from './main.js'
+            import { getUnityAssets, getGames, getSoftware } from './assetLoader.js';
+
+            async function populateUnityAssets() {
+                await populateAssets('unity-assets-container', getUnityAssets, 'unity-asset');
+            }
+
+            async function populateGames() {
+                await populateAssets('games-container', getGames, 'game');
+            }
+
+            async function populateSoftware() {
+                await populateAssets('software-container', getSoftware, 'software');
+            }
+
+            async function populateAssets(containerId, getAssets, type) {
+                const assets = await getAssets();
+                const container = document.querySelector(`#${containerId}`);
+
+                assets.forEach(asset => {
+                    const assetElement = document.createElement('div');
+                    assetElement.classList.add('block', 'rounded-lg', 'bg-white', 'p-6', 'shadow-lg', 'dark:bg-gray-700', 'transform', 'transition', 'duration-500', 'hover:rotate-3');
+                    assetElement.style.cursor = 'pointer';
+
+                    assetElement.addEventListener('click', () => {
+                        const url = new URL('/src/asset.html', window.location.href);
+                        window.location.href = `${url}?type=${type}&id=${asset.id}`;
+                    });
+
+                    assetElement.innerHTML = `
+                        <p class="prose">${asset.blurb}</p>
+                    `;
+
+                    const assetName = document.createElement('h3');
+                    assetName.textContent = asset.name;
+                    assetName.classList.add('mb-4', 'text-xl', 'font-semibold');
+                    if (asset.thumbnail) {
+                        const thumbnailContainer = document.createElement('div');
+                        thumbnailContainer.classList.add('thumbnail-container');
+
+                        const thumbnail = document.createElement('img');
+                        thumbnail.src = asset.thumbnail.url;
+                        thumbnail.alt = `${asset.name} thumbnail`;
+                        thumbnail.classList.add('rounded-lg', 'mx-auto', 'mb-4');
+                        thumbnail.style.maxHeight = '100%';
+
+                        thumbnailContainer.appendChild(thumbnail);
+                        assetElement.insertBefore(thumbnailContainer, assetElement.firstChild);
+
+                        assetElement.insertBefore(assetName, assetElement.firstChild);
+                    }
+                    else {
+                        assetElement.insertBefore(assetName, assetElement.children[0]);
+                    }
+
+                    container.appendChild(assetElement);
+                });
+            }
+
+            populateUnityAssets();
+            populateGames();
+            populateSoftware();
+        </script>
+    </head>
+
+    <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 fade-in">
+        <div id="topBtn"></div>
+        <div id="header"></div>
+
+        <section class="py-10">
+            <div class="container mx-auto">
+                <h2 class="mb-8 text-center text-3xl font-bold">Unity Assets</h2><div class="grid grid-cols-1 gap-8 md:grid-cols-3" id="unity-assets-container"></div>
+            </div>
+        </section>
+
+        <section class="bg-gray-200 py-10 dark:bg-gray-800">
+            <div class="container mx-auto">
+                <h2 class="mb-8 text-center text-3xl font-bold">Games</h2>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-3" id="games-container"></div>
+            </div>
+        </section>
+
+        <section class="py-10">
+            <div class="container mx-auto">
+                <h2 class="mb-8 text-center text-3xl font-bold">Software</h2>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-3" id="software-container">
+            </div>
+        </section>
+
+        <div id="footer"></div>
+    </body>
+
+</html>

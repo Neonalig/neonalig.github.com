@@ -1,0 +1,200 @@
+[
+    {
+        "id": "signal-booster",
+        "name": "Signal Booster for Dead Signal",
+        "tags": ["Dead Signal", "Game Tool"],
+        "publish-date": "2023-10-26T00:00:00.000Z",
+        "url": "https://github.com/Neonalig/Signal-Booster/",
+        "blurb": "The must-have companion for the original challenging version of Dead Signal.",
+        "description": "[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Neonalig/Signal-Booster?style=flat-square)](<https://github.com/Neonalig/Signal-Booster/releases/latest>)\n[![GitHub](https://img.shields.io/github/license/Neonalig/Signal-Booster?style=flat-square)](<https://github.com/Neonalig/Signal-Booster/blob/main/LICENSE.md>)\n[![GitHub all releases](https://img.shields.io/github/downloads/Neonalig/Signal-Booster/total?style=flat-square)](<https://github.com/Neonalig/Signal-Booster/releases/latest>)\n\nWelcome to **Signal Booster**, the must-have companion for every avid player of the original challenging version of [Dead Signal](https://store.steampowered.com/app/2599300/Dead_Signal/). Struggle no longer with that uniquely challenging security keypad! 🎮🔧\n\nLet's face it, we've all been there - facing off a hundred different threats, and then BAM (quite literally), as you're shown off by Lucas because you happened to be looking at the computer the same frame the code changed. But fear not, brave (or foolish) gamer, for **Signal Booster** is here to turn your luck around bypass all those dead signals or whatever it is you do in that game.\n\n## What is Signal Booster?\n\n![Signal Booster Main View Screenshot](https://raw.githubusercontent.com/Neonalig/Signal-Booster/main/Resources/SignalBooster-Main.png)\n\n**Signal Booster** is a simple, yet devilishly clever C# WPF application that acts as your trusty sidekick in the tumultuous world of [Dead Signal](https://store.steampowered.com/app/2599300/Dead_Signal/). It's a rolling timer that syncs up with the game's quirky keypad code mechanic, helping you predict when the next code change will occur and giving you that much-needed edge to conquer the game (or at least not die as often 💀).\n\nPowered by [lepo.co WPF UI](https://github.com/lepoco/wpfui), **Signal Booster** boasts a modern Windows 11-style fluent design that is as sleek as it is user-friendly. It's like the Batman to your Gotham - you didn't know you needed it until it showed up. And it only marginally makes things worse!\n\n## Features\n\n- **Rolling Timer**: Syncs up with the game's keypad code mechanic, helping you track when the next code change will happen.\n- **Keybinds**: Two simple keybinds to rule them all!\n  - One key to mark when a code changes, allowing the rolling timer to adjust and become more accurate with each subsequent code change.\n  - A second key for pausing or clearing the timer when, not if, you meet your untimely demise in the game.\n- **Sleek Design**: Utilises [lepo.co WPF UI](https://github.com/lepoco/wpfui) for a modern, stylish interface that will make your gaming setup look even cooler, 100% guaranteed or your money back!*\n- **Easy to Use**: So simple, even a gamer who needs the help of external tools can use it! (no offense.)\n\n(*Not actually guaranteed. It's literally free. You can't get a refund if you don't pay anything. But it's still pretty cool.)\n\nActually, speaking of payment, [buy me a cuppa?](https://bmc.link/neonalig) ☕👀\n\n## Getting Started\n\n1. Download the latest release of **Signal Booster** from the [releases page](https://github.com/Neonalig/Signal-Booster/releases).\n2. Extract the contents of the zip file to a folder of your choice.\n3. Boot up the game and open **Signal Booster** to the side (or on a second monitor if you're a real cool kid).\n4. Use the designated keybinds to interact with **Signal Booster** while playing the game.\n   - By default, `NumPad -` will mark when the code changes, and `NumPad *` will pause or clear the timer.\n   - Press `NumPad -` whenever the keypad code changes in the game. The first time you press it, the timer will enter a calibration mode, and waits patiently for your next input. Press it again when the code changes to mark the new code, and the timer will adjust accordingly and begin rolling. Should it be miscalibrated or slightly out-of-sync, simply press `NumPad -` again when the code actually changes to correct it.\n   - Press `NumPad *` if you need to pause the timer (`Numpad -` will resume). When paused, if you press `NumPad *` again, the timer will be cleared and reset for a fresh start.\n5. Revel in the glory of your newfound gaming prowess.\n\n## Keybinds\n\n![Signal Booster Keybinds Screenshot](https://raw.githubusercontent.com/Neonalig/Signal-Booster/main/Resources/SignalBooster-Keybinds.png)\n\n- **Rollover**: Press `NumPad -` (you can change this in the settings) whenever the keypad code changes in the game.\n- **Cancel**: Press `NumPad *` (this one is customisable too) when you die (because let's be honest, it's going to happen) to pause or clear the timer and start afresh.\n- All keybinds can be customised with the keybind editor at the bottom right of the main window. Keybinds are stored to a local `keybinds.json` file in the same directory as the application to maintain your customisations between sessions and stay portable.\n\n## Contributing\n\nFound a bug? Have a feature request? Or just want to show off your high score? Feel free to [open an issue](https://github.com/Neonalig/Signal-Booster/issues) or submit a pull request (for everything except that last one)! Your feedback makes **Signal Booster** faster, stronger, and even more awesome!\n\n## License\n\nThis project is licensed under the MIT License - see the [LICENSE.md](https://raw.githubusercontent.com/Neonalig/Signal-Booster/main/LICENSE.md) file for details.\n\n## Acknowledgments\n\nBig shout out to [Reflect Studios](https://www.reflectstudios.com/) for their amazing games! Without them, this very literally would not be possible. If you haven't already, go check out their games, they're awesome!\n\nAdditional shout out to [lepo.co WPF UI](https://github.com/lepoco/wpfui) for the snazzy interface. It's like the icing on the cake, but without the calories. 🍰\n\nAnd of course, a massive thank you to all the gamers out there, relentlessly cracking codes and dying in hallways - you're the real MVPs. 🏆\n\nNow go out there and boost all those dead signals like a pro! 💪🎭",
+        "repository": "https://github.com/Neonalig/Signal-Booster/",
+        "latest-version": "0.1.1",
+        "license": {
+            "type": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        },
+        "media": [
+            {
+                "type": "image",
+                "url": "https://raw.githubusercontent.com/Neonalig/Signal-Booster/main/Resources/SignalBoosterLogo.png"
+            },
+            {
+                "type": "image",
+                "url": "https://raw.githubusercontent.com/Neonalig/Signal-Booster/main/Resources/SignalBooster-Main.png"
+            },
+            {
+                "type": "image",
+                "url": "https://raw.githubusercontent.com/Neonalig/Signal-Booster/main/Resources/SignalBooster-Keybinds.png"
+            }
+        ],
+        "banner": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "thumbnail": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://github.githubassets.com/favicons/favicon-dark.svg"
+        }
+    },
+    {
+        "id": "qmediavsix",
+        "name": "QMediaVSIX",
+        "tags": [
+            "Visual Studio",
+            "IDE Extension",
+            "Media Player"
+        ],
+        "publish-date": "2020-07-03T00:00:00.000Z",
+        "url": "https://github.com/starflash-studios/QMediaVSIX",
+        "blurb": "Quickly play, pause and skip your currently playing media with this Visual Studio 2019 extension.",
+        "description": "# QMediaVSIX\nQuickly play, pause and skip your currently playing media with this Visual Studio 2019 extension. Includes (partial) Japanese translations.\n\nこのVisual Studio 2019の拡張機能を使えば、現在再生中のメディアを素早く再生、一時停止、スキップできます。",
+        "repository": "https://github.com/starflash-studios/QMediaVSIX",
+        "latest-version": "0.1.3.0",
+        "license": {
+            "type": "GNU GPL v3",
+            "url": "https://www.gnu.org/licenses/gpl-3.0.html"
+        },
+        "media": [
+            {
+                "type": "image",
+                "url": "https://user-images.githubusercontent.com/16698604/114695912-b5eab580-9d4e-11eb-86c3-fcd48fd1901a.png"
+            }
+        ],
+        "banner": null,
+        "thumbnail": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://github.githubassets.com/favicons/favicon-dark.svg"
+        }
+    },
+    {
+        "id": "mouse-bounds",
+        "name": "Mouse Bounds",
+        "tags": [
+            "Windows"
+        ],
+        "publish-date": "2020-05-15T00:00:00.000Z",
+        "url": "https://github.com/starflash-studios/MouseBounds",
+        "blurb": "Clamp your mouse to your screen! Or mirror it on it's axis; unity-style.",
+        "description": "# MouseBounds\nClamp your mouse to your screen! Or mirror it on it's axis; unity-style.\n\n## Folder Structure?\nThe folder structure in this GitHub project is quite unique, and may even seem random. This is due to most scripts in separate folders being almost entirely universal and modular. This means that you are free to use and modify these components for your other projects, such as DirectHotkey and TrayIcon (given you credit this project of course ;) ).",
+        "repository": "https://github.com/starflash-studios/MouseBounds",
+        "latest-version": "0.1.0.0",
+        "license": {
+            "type": "GNU GPL v3",
+            "url": "https://www.gnu.org/licenses/gpl-3.0.html"
+        },
+        "media": [],
+        "banner": null,
+        "thumbnail": null,
+        "favicon": {
+            "type": "image",
+            "url": "https://github.githubassets.com/favicons/favicon-dark.svg"
+        }
+    },
+    {
+        "id": "osu-mode-manager",
+        "name": "Osu!ModeManager",
+        "tags": [
+            "osu!",
+            "Game Tool"
+        ],
+        "publish-date": "2021-04-14T00:00:00.000Z",
+        "url": "https://github.com/starflash-studios/Osu-ModeManager",
+        "blurb": "A WPF-based osu!lazer gamemode update-checker utilising GitHub",
+        "description": "# OsuModeManager\n*A WPF-based osu!lazer gamemode update-checker utilising GitHub*\n\n# Getting Started\n1. Locate your osu!lazer install (generally `C:\\Users\\[USER-NAME]\\AppData\\Local\\osulazer\\`)\n2. Log-in to your GitHub account.\n\n# Adding Gamemodes\n1. Press the 'Add' button to add a new gamemode.\n2. Type in the GitHub link (ie `https://github.com/Altenhh/tau/`)\n3. Select 'Get Latest' to auto-fill available parameters.\n4. If you have an older version, change the 'Tag Version' to the version you have installed.\n5. Don't forget to save your changes! 😉\n\n# Summary\n- Locate the osu!lazer install path and sign-in with GitHub\n- Add gamemodes to the list that you wish to check updates for\n- From now-on, whenever a gamemode gets a new GitHub release, you only have to press the 'Check for Updates' button and let the program do the rest.",
+        "repository": "https://github.com/starflash-studios/Osu-ModeManager",
+        "latest-version": "0.2.1.0",
+        "license": {
+            "type": "GNU GPL v3",
+            "url": "https://www.gnu.org/licenses/gpl-3.0.html"
+        },
+        "media": [],
+        "banner": null,
+        "thumbnail": null,
+        "favicon": {
+            "type": "image",
+            "url": "https://github.githubassets.com/favicons/favicon-dark.svg"
+        }
+    },
+    {
+        "id": "osu-backgroundpurger",
+        "name": "no!backgrounds",
+        "tags": [
+            "osu!",
+            "Game Tool"
+        ],
+        "publish-date": "2020-02-18T00:00:00.000Z",
+        "url": "https://github.com/starflash-studios/osu-backgroundpurger",
+        "blurb": "Liberate your storage space, and the eyes of onlookers, with this automated osu! background / video remover.",
+        "description": "Liberate your storage space, and the eyes of onlookers, with this automated osu! background / video remover. Also doubles as a background blurrer - for when your underage anime grills are just a little too underage ;)\n\n\n![HeaderRequired](https://user-images.githubusercontent.com/16698604/75624946-55ed8a00-5bf4-11ea-91a2-ddcdd45f2092.png)\n# Requirements\n- [x] [.NET Framework 4.7.2 (Runtime)](https://dotnet.microsoft.com/download/dotnet-framework)\n- [x] Windows 10, 8.1, 8, 7 SP1, Vista / XP (Untested)\n- [ ] A life\n\n\n![HeaderInstall](https://user-images.githubusercontent.com/16698604/75624945-5423c680-5bf4-11ea-98a0-a1a3d2a6d1c8.png)\n# Installation\n1. [See Requirements](#requirements)\n2. Download the latest stable version's 'Release.zip' file from the [Releases](https://github.com/starflash-studios/osu-backgroundpurger/releases) page.\n3. Extract the archive to it's own folder, and move that folder to where you would like the program to be located.\n4. Create any shortcuts to the program you would like (i.e. in `C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs`).\n5. Run 'no!background.exe' to start the program\n\n# IMPORTANT\nPlease note: The below is an outdated readme.md file from versions 0.1.1.0 and below. Though the functionality remains almost the same, all below information is outdated and not relevant to the latest version. An updated readme.md file will be released soon.\n\n*With that out of the way, let's begin.*\n\n![HeaderModes](https://user-images.githubusercontent.com/16698604/75624881-b7612900-5bf3-11ea-8f3a-6080751e55df.png)\n# Modes\n* Disable\n* Enable\n* Delete\n* Blur\n\n## Disable\nThis mode renames all used background media files by appending .bkp to the filename, whilst simultaneously commenting out the related lines in the .osu file. This ensures that the files are preserved, whilst also making sure osu! isn't annoyed by not finding the file. [This process can be undone](#enable).\n\n## Enable\nThis mode renames all backup files created in the [previous process](#disable) by removing the .bkp from the end of the file name. This process also ensures to uncomment the related lines in the .osu file to allow osu! to know that the backgrounds are available again.\n\n## Delete\nThis mode deletes all background media files, whilst simultaneously comment out the related lines in the .osu file. This process saves space, but **can not be undone**. For a process that can be undone, see [disable](#disable) and [enable](#enable).\n\n## Blur\nThis mode blurs all supported background image files (*.png, *.jpg & *.bmp). Original files have .bkp appended to the end of the file so that the process can be undone by overriding the new files. It is recommended to delete all .bkp files to save space if you are happy with the results.\n\n\n![HeaderUI](https://user-images.githubusercontent.com/16698604/75624880-b62ffc00-5bf3-11ea-814b-f32f03965525.png)\n# UI\nOnce a mode has been selected by clicking on the relevant name, the user may choose to either process a [select](#select) amount of beatmaps, or [all](#auto) beatmaps found within a folder\n\n## Select\n![SelectButton](https://user-images.githubusercontent.com/16698604/75624884-bb8d4680-5bf3-11ea-9d48-ad93192acd03.png)\n\nUpon clicking on the 'SELECT' button, a file browsing dialog will open. The user may then choose the beatmap folders they would like to process. In windows, holding CTRL or SHIFT will allow the user to select multiple folders at once.\n\n## Auto\n![AutoButton](https://user-images.githubusercontent.com/16698604/75625433-e4fca100-5bf8-11ea-80fb-c6f84ed375a1.png)\n\nUpon clicking on the 'AUTO' button, a file browsing dialog will open. The user must then select the folder **CONTAINING** all the beatmap folders. The program will then iterate through **ALL** found beatmaps and apply the selected mode.\n\n\n![License](https://user-images.githubusercontent.com/16698604/75624962-7b7a9380-5bf4-11ea-9395-6c818508d7eb.png)\n# License\n`GNU GPL v3: `\n> This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.",
+        "repository": "https://github.com/starflash-studios/osu-backgroundpurger",
+        "latest-version": "0.2.1.0",
+        "license": {
+            "type": "GNU GPL v3",
+            "url": "https://www.gnu.org/licenses/gpl-3.0.html"
+        },
+        "media": [
+            {
+                "type": "image",
+                "url": "https://user-images.githubusercontent.com/16698604/75624773-613fb600-5bf2-11ea-91e1-678ef262bb6f.png"
+            },
+            {
+                "type": "image",
+                "url": "https://user-images.githubusercontent.com/16698604/75624946-55ed8a00-5bf4-11ea-91a2-ddcdd45f2092.png"
+            },
+            {
+                "type": "image",
+                "url": "https://user-images.githubusercontent.com/16698604/75624945-5423c680-5bf4-11ea-98a0-a1a3d2a6d1c8.png"
+            },
+            {
+                "type": "image",
+                "url": "https://user-images.githubusercontent.com/16698604/75624881-b7612900-5bf3-11ea-8f3a-6080751e55df.png"
+            },
+            {
+                "type": "image",
+                "url": "https://user-images.githubusercontent.com/16698604/75624880-b62ffc00-5bf3-11ea-814b-f32f03965525.png"
+            },
+            {
+                "type": "image",
+                "url": "https://user-images.githubusercontent.com/16698604/75624884-bb8d4680-5bf3-11ea-9d48-ad93192acd03.png"
+            },
+            {
+                "type": "image",
+                "url": "https://user-images.githubusercontent.com/16698604/75625433-e4fca100-5bf8-11ea-80fb-c6f84ed375a1.png"
+            },
+            {
+                "type": "image",
+                "url": "https://user-images.githubusercontent.com/16698604/75624962-7b7a9380-5bf4-11ea-9395-6c818508d7eb.png"
+            }
+        ],
+        "banner": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "thumbnail": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://github.githubassets.com/favicons/favicon-dark.svg"
+        }
+    }
+]

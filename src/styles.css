@@ -1,0 +1,73 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.media-popout {
+    cursor: pointer;
+    /* Animate it to follow mouse 3d */
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+}
+
+.media-popout:hover {
+    transform: rotate(3deg);
+}
+
+.hidden {
+    display: none;
+}
+
+.media-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* for 16:9 aspect ratio */
+    height: 0;
+}
+
+.media-wrapper > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.toggle-checkbox:checked {
+    transform: translateX(1.5rem);
+    border-color: #48bb78;
+}
+
+.toggle-checkbox:checked+.toggle-label {
+    background-color: #48bb78;
+}
+
+#topBtn {
+    z-index: 9999;
+}

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "onecommander-connector-for-unity",
+        "name": "OneCommander Connector for Unity",
+        "tags": ["OneCommander", "Editor Extension", "Editor Tool"],
+        "publish-date": "2023-04-19T00:00:00.000Z",
+        "url": "https://prf.hn/click/camref:1011lvXjM/destination:https://assetstore.unity.com/packages/tools/utilities/onecommander-connector-for-unity-247753",
+        "blurb": "Quickly view and open files and folders in OneCommander from your Unity project.",
+        "description": "**OneCommander Connector for Unity** is a Unity plugin that allows you to view and open files and folders in OneCommander from your Unity project.\n\nUse quick access buttons and context menu options to quickly and easily view paths in OneCommander, or any other file manager, utilising extensive custom configuration options.\nUsing this tool, directly bypasses Unity's traditional method of opening the file explorer, which can be slow and cumbersome, as it often displays a 20 second progress bar even when the file explorer is already open.\n\nDocumentation and support available on [GitHub](https://github.com/Neonalig/OneCommander-Connector-for-Unity).\nThis plugin is compatible with Unity 2018.3 and above.\n\nUnfortunately, the [Asset Store Publishing Tools](https://assetstore.unity.com/packages/tools/utilities/asset-store-publishing-tools-115) only supports 2019.4 and above, so that's the minimum it can be uploaded as. Regardless, plugin has been tested and works with as early as 2018.3.0f1.\n\nDon't have OneCommander? Download it here: <https://onecommander.com>\nThis is a third-party plugin, and is not affiliated with Unity Technologies or OneCommander.\nFor help and support, please [contact the plugin developer](mailto:codychook@gmail.com), not OneCommander.\n\nPermission was granted by OneCommander to use the OneCommander logo and name in this plugin.",
+        "repository": "https://github.com/Neonalig/OneCommander-Connector-for-Unity",
+        "latest-version": "1.1.0",
+        "price": "Free",
+        "license": {
+            "name": "Standard Unity Asset Store EULA",
+            "url": "https://unity.com/legal/as-terms",
+            "type": "Extension Asset"
+        },
+        "media": [
+            {
+                "type": "image",
+                "url": "https://assetstorev1-prd-cdn.unity3d.com/key-image/84373110-4d73-4ffb-b64f-bb0e124babf7.webp"
+            },
+            {
+                "type": "image",
+                "url": "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/d8642407-4e69-4cba-95dc-ba21ebff149b.webp"
+            },
+            {
+                "type": "image",
+                "url": "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/458b95ef-1a30-464d-90a6-1b420c51723a.webp"
+            },
+            {
+                "type": "image",
+                "url": "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/eed8a3cd-4fbf-4ed9-ab66-08a26adb0629.webp"
+            }
+        ],
+        "banner": {
+            "type": "image",
+            "url": "https://github.com/Neonalig/OneCommander-Connector-for-Unity/raw/main/Resources/Branding/BrandingLargeTransparent.png?raw=true"
+        },
+        "thumbnail": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://unity-assetstorev2-prd.storage.googleapis.com/cdn-origin/images/favicons/favicon.ico"
+        }
+    }
+]

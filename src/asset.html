@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Asset Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="/dist/styles.css" rel="stylesheet">
+        <script type="module" src="./assetLoader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script type="module" src="./main.js"></script>
+    </head>
+
+    <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 fade-in">
+        <div id="topBtn"></div>
+        <div id="header"></div>
+        <div id="backBtn"></div>
+
+        <section class="py-10">
+            <div class="container mx-auto">
+                <div id="asset-banner" class="rounded-lg overflow-hidden mb-8"></div>
+                <h2 id="asset-title" class="mb-8 text-center text-3xl font-bold"></h2>
+                <div id="asset-description" class="prose dark:prose-dark"></div>
+                <div id="asset-tags" class="mt-4 flex flex-wrap"></div>
+                <div id="asset-platforms" class="mt-4 flex flex-wrap"></div>
+                <div id="asset-publish-date" class="mt-4"></div>
+                <div id="game-jam" class="mt-4"></div>
+                <div id="asset-media" class="mt-4 grid grid-cols-2 gap-4"></div>
+            </div>
+        </section>
+
+        <section class="py-10">
+            <div class="container mx-auto text-center flex justify-between">
+                <button id="prev-asset" type="button" class="rounded-full bg-blue-600 px-4 py-2 text-white dark:bg-blue-700">&#8592; Previous $assetType</button>
+                <a id="asset-url" class="rounded-full bg-blue-600 px-4 py-2 text-white dark:bg-blue-700">Play Now</a>
+                <button id="next-asset" type="button" class="rounded-full bg-blue-600 px-4 py-2 text-white dark:bg-blue-700">Next $assetType &#8594;</button>
+        </section>
+
+        <div id="overlay"
+            class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center fade-in">
+            <!-- <button id="overlay-prev" type="button" class="absolute left-4 bg-white dark:bg-gray-800 rounded-full p-2">
+                &#8592; Prev
+            </button> -->
+            <img id="overlay-image" alt="" class="max-w-3/4 max-h-3/4" />
+            <!-- <button id="overlay-next" type="button" class="absolute right-4 bg-white dark:bg-gray-800 rounded-full p-2">
+                Next &#8594;
+            </button> -->
+            <!-- <button id="overlay-download" type="button" class="absolute top-4 right-16 bg-white dark:bg-gray-800 rounded-full p-2">
+                &#8681; Download
+            </button> -->
+            <button id="overlay-close" type="button" class="absolute top-4 right-4 bg-white dark:bg-gray-800 rounded-full p-2">
+                &#10754; Close
+            </button>
+        </div>
+
+        <script type="module">
+            import { getUnityAsset, getUnityAssets, getNextUnityAsset, getPreviousUnityAsset, getGame, getGames, getNextGame, getPreviousGame, getSoftwareItem, getSoftware, getNextSoftwareItem, getPreviousSoftwareItem } from './assetLoader.js';
+
+            import { marked } from 'https://cdn.jsdelivr.net/npm/marked@13.0.0/+esm'
+            marked.setOptions({
+                grm: true,
+                breaks: true
+            });
+
+            async function populate() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const assetType = urlParams.get('type');
+                const assetId = urlParams.get('id');
+
+                // If we didn't get an ID, get the first ID and navigate to it
+                if (!assetId) {
+                    let firstAsset;
+                    switch (assetType) {
+                        case 'game':
+                            firstAsset = (await getGames())[0];
+                            break;
+                        case 'software':
+                            firstAsset = (await getSoftware())[0];
+                            break;
+                        case 'unity-asset':
+                            firstAsset = (await getUnityAssets())[0];
+                            break;
+                        default:
+                            console.error('Invalid asset type');
+                            return;
+                    }
+                    window.location.search = `?type=${assetType}&id=${firstAsset.id}`;
+                    return;
+                }
+
+                let asset;
+                let getNextAsset;
+                let getPreviousAsset;
+                const prevAssetBtn = document.getElementById('prev-asset');
+                const nextAssetBtn = document.getElementById('next-asset');
+
+                switch (assetType) {
+                    case 'game':
+                        asset = await getGame(assetId);
+                        getNextAsset = getNextGame;
+                        getPreviousAsset = getPreviousGame;
+                        prevAssetBtn.textContent = prevAssetBtn.textContent.replace('$assetType', 'Game');
+                        nextAssetBtn.textContent = nextAssetBtn.textContent.replace('$assetType', 'Game');
+                        break;
+                    case 'software':
+                        asset = await getSoftwareItem(assetId);
+                        getNextAsset = getNextSoftwareItem;
+                        getPreviousAsset = getPreviousSoftwareItem;
+                        prevAssetBtn.textContent = prevAssetBtn.textContent.replace('$assetType', 'Software');
+                        nextAssetBtn.textContent = nextAssetBtn.textContent.replace('$assetType', 'Software');
+                        break;
+                    case 'unity-asset':
+                        asset = await getUnityAsset(assetId);
+                        getNextAsset = getNextUnityAsset;
+                        getPreviousAsset = getPreviousUnityAsset;
+                        prevAssetBtn.textContent = prevAssetBtn.textContent.replace('$assetType', 'Unity Asset');
+                        nextAssetBtn.textContent = nextAssetBtn.textContent.replace('$assetType', 'Unity Asset');
+                        break;
+                    default:
+                        console.error('Invalid asset type');
+                        return;
+                }
+
+                if (asset.banner) {
+                    document.getElementById('asset-banner').innerHTML = `<img src="${asset.banner.url}" alt="${asset.name} banner" class="w-full">`;
+                    document.getElementById('asset-title').style.display = 'none';
+                } else {
+                    document.getElementById('asset-banner').style.display = 'none';
+                    document.getElementById('asset-title').textContent = asset.name;
+                }
+
+                let html = marked(asset.description);
+                html = html.replace(/<a/g, '<a class="text-blue-500 hover:underline"');
+                html = html.replace(/<h1/g, '<h2 class="text-2xl font-bold mt-8 mb-4"');
+                html = html.replace(/<h2/g, '<h3 class="text-xl font-bold mt-6 mb-3"');
+                html = html.replace(/<h3/g, '<h4 class="text-lg font-bold mt-4 mb-2"');
+                html = html.replace(/<h4/g, '<h5 class="text-base font-bold mt-3 mb-1"');
+                html = html.replace(/<li>/g, '<li class="list-disc ml-4">');
+                html = html.replace(/<ul>/g, '<ul class="list-disc ml-4">');
+                html = html.replace(/<code/g, '<code class="bg-gray-200 dark:bg-gray-800 rounded px-1"');
+                html = html.replace(/<p>/g, '<p class="mb-4">');
+                html = html.replace(/<h(\d)([^>]*)>([^<]*)<\/h\d>/g, (match, p1, p2, p3) => `<h${p1} id="${p3.toLowerCase().replace(/[^a-z0-9]/g, '-')}"${p2}>${p3}</h${p1}>`);
+                document.getElementById('asset-description').innerHTML = html;
+
+                if (asset.tags)
+                {
+                    document.getElementById('asset-tags').innerHTML = asset.tags.map(tag => `<span class="inline-block bg-blue-200 dark:bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-900 mr-2 mb-2">${tag}</span>`).join('');
+                }
+                else {
+                    document.getElementById('asset-tags').style.display = 'none';
+                }
+
+                if (asset.platforms)
+                {
+                    document.getElementById('asset-platforms').innerHTML = asset.platforms.map(platform => `<span class="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">${platform}</span>`).join('');
+                }
+                else {
+                    document.getElementById('asset-platforms').style.display = 'none';
+                }
+
+                const publishDate = new Date(asset['publish-date']);
+                document.getElementById('asset-publish-date').textContent = `Published on: ${publishDate.toLocaleDateString()}`;
+
+                const gameJam = document.getElementById('game-jam');
+                if (asset['game-jam']){
+                    gameJam.textContent = `Game Jam: ${asset['game-jam']}`;
+                }
+                else {
+                    gameJam.style.display = 'none';
+                }
+
+                document.getElementById('asset-media').innerHTML = asset.media.map(media => {
+                    if (media.type === 'image') {
+                        return `<div class="media-wrapper"><img src="${media.url}" alt="${asset.name} media" class="w-full rounded media-popout"></div>`;
+                    } else if (media.type === 'video') {
+                        const urlDomain = new URL(media.url).hostname;
+                        if (urlDomain === 'www.youtube.com') {
+                            const videoId = new URL(media.url).searchParams.get('v');
+                            return `<div class="media-wrapper"><iframe src="https://www.youtube.com/embed/${videoId}" title="${asset.name} media" class="w-full rounded media-popout" allowfullscreen></iframe></div>`;
+                        }
+                        else {
+                            return `<div class="media-wrapper"><video src="${media.url}" alt="${asset.name} media" class="w-full rounded media-popout" controls></video></div>`;
+                        }
+                    }
+                }).join('');
+
+                const favicon = document.createElement('link');
+                favicon.rel = 'icon';
+                favicon.href = asset.favicon.url;
+                document.head.appendChild(favicon);
+
+                document.title = asset.name;
+
+                document.getElementById('next-asset').addEventListener('click', async function () {
+                    // NOTE: We purposefully swap next and previous buttons here, as the 'next' asset in the list, is the one that was published earlier (since we show the assets in descending order of publish date)
+                    const prevAssetId = new URLSearchParams(window.location.search).get('id');
+                    const prevAsset = await getPreviousAsset(prevAssetId);
+                    window.location.search = `?type=${assetType}&id=${prevAsset.id}`;
+                });
+
+                const playNowBtn = document.getElementById('asset-url');
+                playNowBtn.addEventListener('click', function () {
+                    window.open(asset.url, '_blank');
+                });
+                playNowBtn.style.cursor = 'pointer';
+                if (assetType === 'game') {
+                    playNowBtn.textContent = 'Play Now';
+                } else {
+                    playNowBtn.textContent = 'Download';
+                }
+
+                document.getElementById('prev-asset').addEventListener('click', async function () {
+                    const nextAssetId = new URLSearchParams(window.location.search).get('id');
+                    const nextAsset = await getNextAsset(nextAssetId);
+                    window.location.search = `?type=${assetType}&id=${nextAsset.id}`;
+                });
+            }
+            populate();
+
+            const overlay = document.getElementById('overlay');
+            const overlayImage = document.getElementById('overlay-image');
+            const overlayClose = document.getElementById('overlay-close');
+
+            document.addEventListener('click', function (event) {
+                if (event.target.matches('.media-popout')) {
+                    overlayImage.src = event.target.src;
+                    overlay.classList.remove('hidden');
+                }
+            });
+
+            overlay.addEventListener('click', function (event) {
+                if (event.target === overlay) {
+                    overlay.classList.add('hidden');
+                }
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    overlay.classList.add('hidden');
+                }
+            });
+
+            overlayClose.addEventListener('click', function () {
+                overlay.classList.add('hidden');
+            });
+        </script>
+        <div id="footer"></div>
+    </body>
+
+</html>
