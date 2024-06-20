@@ -9,6 +9,7 @@
         "description": "**OneCommander Connector for Unity** is a Unity plugin that allows you to view and open files and folders in OneCommander from your Unity project.\n\nUse quick access buttons and context menu options to quickly and easily view paths in OneCommander, or any other file manager, utilising extensive custom configuration options.\nUsing this tool, directly bypasses Unity's traditional method of opening the file explorer, which can be slow and cumbersome, as it often displays a 20 second progress bar even when the file explorer is already open.\n\nDocumentation and support available on [GitHub](https://github.com/Neonalig/OneCommander-Connector-for-Unity).\nThis plugin is compatible with Unity 2018.3 and above.\n\nUnfortunately, the [Asset Store Publishing Tools](https://assetstore.unity.com/packages/tools/utilities/asset-store-publishing-tools-115) only supports 2019.4 and above, so that's the minimum it can be uploaded as. Regardless, plugin has been tested and works with as early as 2018.3.0f1.\n\nDon't have OneCommander? Download it here: <https://onecommander.com>\nThis is a third-party plugin, and is not affiliated with Unity Technologies or OneCommander.\nFor help and support, please [contact the plugin developer](mailto:codychook@gmail.com), not OneCommander.\n\nPermission was granted by OneCommander to use the OneCommander logo and name in this plugin.",
         "repository": "https://github.com/Neonalig/OneCommander-Connector-for-Unity",
         "latest-version": "1.1.0",
+        "minimum-unity-editor-version": "2018.3.0f1",
         "price": "Free",
         "license": {
             "name": "Standard Unity Asset Store EULA",
@@ -36,6 +37,110 @@
         "banner": {
             "type": "image",
             "url": "https://github.com/Neonalig/OneCommander-Connector-for-Unity/raw/main/Resources/Branding/BrandingLargeTransparent.png?raw=true"
+        },
+        "thumbnail": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://unity-assetstorev2-prd.storage.googleapis.com/cdn-origin/images/favicons/favicon.ico"
+        }
+    },
+    {
+        "id": "scene-toolbar",
+        "name": "Scene Toolbar",
+        "tags": [
+            "Scene Management",
+            "Toolbar",
+            "Overlay",
+            "Editor Extension",
+            "Editor Tool"
+        ],
+        "publish-date": "2024-06-18T00:00:00.000Z",
+        "url": "https://prf.hn/click/camref:1011lvXjM/destination:https://assetstore.unity.com/packages/tools/utilities/scene-toolbar-quick-scene-management-overlay-270768",
+        "blurb": "Enhance your scene management workflow with Scene Toolbar, a rapid prototyping tool for developers.",
+        "description": "Introducing Scene Toolbar, the simple yet well-needed rapid prototyping enhancement tool for developers. Quickly streamline your scene changing workflow in complex projects and say goodbye to cumbersome hidden or nested context menus. Favourite scenes you use often and switch between them on the fly without needing to memorise long file paths.\n\n**Key Features:**\n- **Quick Scene Launch:** Use the dedicated play button to allow you to instantly launch the main scene in your Build Settings, saving valuable time during development and allowing rapid testing and iteration.\n- **Seamless Scene Switching:** Leverage the user-friendly dropdown menu for effortless scene changes, available both in-editor and during play mode, and ensure smooth scene transitions.\n- **Favourites Dropdown:** Personalise your development process with a favourites dropdown that enables you to filter and access the scenes you frequently visit.\n- **Draggable Window Interface:** The overlay is designed to be non-intrusive and fully customizable. You can easily reposition the window within the Scene View to suit your preferences.\n- **Easy Access and Customisation:** Show and hide overlays with a simple click using the ⋮ button located in the top right of the SceneView. For deeper customization, right-click on the overlay for settings or find it in the Preferences menu.",
+        "repository": null,
+        "latest-version": "1.0",
+        "minimum-unity-editor-version": "2022.3.12f1",
+        "price": "Free",
+        "license": {
+            "name": "Standard Unity Asset Store EULA",
+            "url": "https://unity.com/legal/as-terms",
+            "type": "Extension Asset"
+        },
+        "media": [
+            {
+                "type": "image",
+                "url": "https://assetstorev1-prd-cdn.unity3d.com/key-image/e6ca3e3b-c694-44a1-b564-cb3982f38bda.webp"
+            },
+            {
+                "type": "image",
+                "url": "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/ff1a9aa7-6be2-4053-acfd-e3de05efe6e5.webp"
+            }
+        ],
+        "banner": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "thumbnail": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
+        },
+        "favicon": {
+            "type": "image",
+            "url": "https://unity-assetstorev2-prd.storage.googleapis.com/cdn-origin/images/favicons/favicon.ico"
+        }
+    },
+    {
+        "id": "hierarchy-overlay",
+        "name": "Hierarchy Overlay",
+        "tags": [
+            "Object Management",
+            "Transform",
+            "Hierarchy",
+            "Toolbar",
+            "Overlay",
+            "SceneView",
+            "Selection",
+            "Editor Extension",
+            "Editor Tool"
+        ],
+        "publish-date": "2024-06-18T00:00:00.000Z",
+        "url": "https://prf.hn/click/camref:1011lvXjM/destination:https://assetstore.unity.com/packages/tools/utilities/hierarchy-overlay-intuitive-object-hierarchy-navigation-270776",
+        "blurb": "Simplify navigation and selection within complex scene structures with Hierarchy Overlay.",
+        "description": "Hierarchy Overlay is a quick hierarchy pathing tool designed to simplify navigation and selection within complex scene structures. Ideal for managing intricate hierarchies like rig systems or detailed scene GameObject layouts, this tool enhances your Unity Editor experience with an intuitive and efficient overlay.\n\n**Key Features:**\n- **Hierarchy Navigation:** This overlay displays the full tree hierarchy of any selected object in the Scene View. It offers a clear, visual path from the root to the selected object, streamlining your navigation process.\n- **Clickable Path Segments:** With this tool, you can easily navigate through the object hierarchy by clicking on individual path segments in the overlay. This feature allows for quick selection and traversal of parent and child objects.\n- **Customisable Interaction:** Users can configure the overlay to either navigate to or ping objects in the hierarchy. This flexibility ensures that Path Hierarchy aligns with various workflow preferences and project needs.\n- **Seamless Integration and Accessibility:** The overlay is designed to blend seamlessly with the Unity Editor. You can show and hide the overlay using the ⋮ button in the top right of the SceneView. For additional customisation, access the settings through a right-click on the overlay or find it in the Preferences menu.",
+        "repository": null,
+        "latest-version": "1.0",
+        "minimum-unity-editor-version": "2022.3.12f1",
+        "price": "Free",
+        "license": {
+            "name": "Standard Unity Asset Store EULA",
+            "url": "https://unity.com/legal/as-terms",
+            "type": "Extension Asset"
+        },
+        "media": [
+            {
+                "type": "image",
+                "url": "https://assetstorev1-prd-cdn.unity3d.com/key-image/50d4696a-cba9-475b-8436-cecb9a190b35.webp"
+            },
+            {
+                "type": "image",
+                "url": "https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/355d3aa1-f910-47fc-9ca8-c82c426f8744.webp"
+            }
+        ],
+        "banner": {
+            "reference": {
+                "field": "media",
+                "index": 0
+            }
         },
         "thumbnail": {
             "reference": {
